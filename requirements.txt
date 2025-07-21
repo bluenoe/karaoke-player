@@ -1,0 +1,14 @@
+# Karaoke Rich - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+rich>=12.0.0
+
+# Optional dependencies for future features
+# Uncomment when implementing audio playback
+# pygame>=2.0.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# mypy>=0.950

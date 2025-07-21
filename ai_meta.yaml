@@ -1,0 +1,95 @@
+project_name: Karaoke Rich
+language: Python
+description: Terminal karaoke app using Rich library, renders lyrics in sync with timing.
+version: "1.0.0"
+author: AI Developer Assistant
+
+uses:
+  - rich for terminal UI
+  - JSON for lyrics input
+  - dataclasses for data models
+  - pathlib for file handling
+  - typing for type hints
+
+structure:
+  - main.py: Entry point and application management
+  - karaoke_player.py: Core playback engine and session management
+  - layout_builder.py: Rich UI components and rendering
+  - lyrics_data.py: Data models and JSON lyrics loader
+  - utils.py: Helper functions and utilities
+  - lyrics/: Directory containing song lyrics in JSON format
+
+features:
+  current:
+    - Word-by-word synchronized lyrics display
+    - Colorful terminal UI with Rich library
+    - Progress bar and timing information
+    - Multiple song support via JSON files
+    - Clean modular architecture
+    - Type hints and comprehensive docstrings
+    - Error handling and user-friendly interface
+  
+  future_features:
+    - Audio playback (MP3) using pygame.mixer
+    - Dynamic song selector menu
+    - Auto-scroll mode and karaoke theme colors
+    - Export lyrics with timestamps to .lrc format
+    - GUI wrapper with tkinter
+    - Web frontend interface
+    - Pause/resume/seek functionality
+    - Custom timing adjustments
+    - Playlist support
+    - Real-time lyrics editing
+
+dependencies:
+  required:
+    - rich: ">=12.0.0"
+  optional:
+    - pygame: ">=2.0.0"  # For future audio playback
+
+file_formats:
+  lyrics:
+    format: JSON
+    structure:
+      title: string
+      artist: string
+      sentences:
+        sentence_key:
+          - time: integer (milliseconds)
+            text: string
+
+architecture:
+  pattern: Modular MVC-like
+  separation_of_concerns:
+    - Data layer: lyrics_data.py
+    - Business logic: karaoke_player.py
+    - Presentation: layout_builder.py
+    - Utilities: utils.py
+    - Application: main.py
+
+code_style:
+  - Type hints for all functions
+  - Comprehensive docstrings
+  - Dataclass models for structured data
+  - External file-based configuration
+  - Clean logging and error handling
+  - PEP 8 compliance
+
+usage:
+  installation:
+    - pip install rich
+    - Clone/download project files
+    - Add JSON lyrics files to lyrics/ directory
+  
+  running:
+    - python main.py
+    - Select song from menu
+    - Follow on-screen instructions
+
+ai_development_notes:
+  - Easily extendable for new features
+  - Well-documented for AI understanding
+  - Modular design allows independent component updates
+  - JSON format makes lyrics data easily manageable
+  - Rich library provides extensive UI customization options
+  - Type hints enable better AI code analysis and suggestions
