@@ -1,16 +1,24 @@
-# 🎵 Karaoke Rich - Terminal Karaoke Player
+# Karaoke Rich 🎤🎵
 
-A beautiful terminal-based karaoke player built with Python and the Rich library. Display synchronized lyrics with word-by-word timing in a colorful, dynamic terminal interface.
+A comprehensive terminal-based karaoke application built with Python and Rich library, featuring synchronized lyrics display, audio playback, themes, and modern UI.
 
-## ✨ Features
+## Features ✨
 
-- 🎤 **Word-by-word synchronized lyrics** - Follow along with precise timing
-- 🌈 **Beautiful terminal UI** - Colorful interface using Rich library
-- ⏱️ **Real-time progress tracking** - Progress bar and timing information
-- 📊 **Song information display** - Title, artist, duration, and statistics
-- 🎵 **Multiple song support** - Easy-to-manage JSON lyrics format
-- ⌨️ **Simple controls** - Keyboard-based navigation
-- 🏗️ **Modular architecture** - Clean, extensible codebase
+### Core Features
+- 🎵 **Real-time lyrics synchronization** - Words highlight as they should be sung
+- 🔊 **Audio playback support** - Play audio files alongside lyrics (MP3, WAV, OGG, M4A)
+- 🌈 **Beautiful terminal UI** - Colorful and modern interface using Rich
+- ⏱️ **Precise timing** - Millisecond-accurate word synchronization
+- 📊 **Progress tracking** - Visual progress bar and time information
+- 🎤 **Multiple songs support** - Easy to add new songs via JSON files
+
+### Advanced Features
+- 🎨 **Multiple themes** - Switch between different color schemes
+- ⚙️ **Configurable settings** - Customize display, audio, and playback options
+- 🎛️ **Audio controls** - Volume control, pause/resume, seek functionality
+- 📱 **Interactive menus** - Easy navigation through songs and settings
+- 💾 **Persistent configuration** - Settings saved between sessions
+- 🔄 **Real-time theme switching** - Change themes without restarting
 
 ## 📦 Installation
 

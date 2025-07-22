@@ -1,0 +1,28 @@
+{
+  "theme": "default",
+  "display": {
+    "show_progress_bar": true,
+    "show_time_info": true,
+    "show_next_sentence": true,
+    "show_previous_sentence": false,
+    "highlight_duration": 800,
+    "scroll_speed": 1,
+    "max_visible_sentences": 5,
+    "center_current_sentence": true,
+    "show_word_count": false,
+    "show_sentence_numbers": false
+  },
+  "audio": {
+    "enable_audio": false,
+    "volume": 0.7,
+    "audio_format": "mp3",
+    "audio_directory": "audio",
+    "auto_play": true,
+    "fade_in_duration": 1000,
+    "fade_out_duration": 1000
+  },
+  "lyrics_directory": "lyrics",
+  "auto_save_settings": true,
+  "check_for_updates": true,
+  "language": "vi"
+}
