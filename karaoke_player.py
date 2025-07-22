@@ -1,17 +1,20 @@
-"""Core karaoke player module.
+"""Karaoke player module for handling song playback and display.
 
-This module contains the main logic for playing karaoke with synchronized
-lyrics display and timing management.
+This module contains the main KaraokePlayer class that manages
+song playback, timing, user interactions, and audio synchronization.
 """
 
 import time
-from typing import Optional
+import threading
+from typing import Optional, Tuple, Callable
 from rich.console import Console
 from rich.live import Live
 
-from lyrics_data import Song
+from lyrics_data import Song, Sentence, LyricsLoader
 from layout_builder import KaraokeLayoutBuilder
-from utils import get_current_sentence, get_next_sentence, is_song_finished
+from utils import get_current_sentence, get_next_sentence, get_previous_sentence, is_song_finished
+from config import ConfigManager
+from audio_player import create_audio_player, AudioPlayer
 
 
 class KaraokePlayer:
